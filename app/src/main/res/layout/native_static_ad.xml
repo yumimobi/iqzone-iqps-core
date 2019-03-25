@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/icon_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/icon_image"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/privacy_icon_image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/privacy_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/privacy_call_to_action_view"
+        android:layout_toRightOf="@id/privacy_icon_image"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/call_to_action_view"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/privacy_call_to_action_view"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0000FF"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_below="@id/icon_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_below="@id/text_view"
+        android:layout_above="@id/call_to_action_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+</RelativeLayout>
